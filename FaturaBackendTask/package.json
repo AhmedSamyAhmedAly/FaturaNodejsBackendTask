@@ -1,0 +1,41 @@
+{
+  "name": "faturabackendtask-useruthentication",
+  "version": "1.0.0",
+  "description": "this is a backend task for fatura",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon .",
+    "debug": "nodemon --inspect .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmedSamyAhmedAly/userAuthentication.git"
+  },
+  "keywords": [
+    "nodeJs"
+  ],
+  "author": "AhmedSamy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmedSamyAhmedAly/userAuthentication/issues"
+  },
+  "homepage": "https://github.com/AhmedSamyAhmedAly/userAuthentication#readme",
+  "dependencies": {
+    "accesscontrol": "^2.2.1",
+    "bcrypt": "^5.0.1",
+    "connect-redis": "^6.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-blacklist": "^0.1.2",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14",
+    "redis": "^3.1.2"
+  }
+}

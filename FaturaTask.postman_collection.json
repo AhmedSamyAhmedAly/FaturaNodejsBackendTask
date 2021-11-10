@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "0fbc0740-ff74-480f-9019-9076fce21640",
+		"name": "FaturaTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ahmed\",\r\n    \"email\":\"ahmedsamy@gmail.com\",\r\n    \"password\":\"Testing0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/register?api_key=facd3f50-befb-4dda-a77a-13fbd02d2f24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "facd3f50-befb-4dda-a77a-13fbd02d2f24"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ahmed\",\r\n    \"email\":\"ahmedsamy@gmail.com\",\r\n    \"password\":\"Testing0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/register?api_key=facd3f50-befb-4dda-a77a-13fbd02d2f24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "facd3f50-befb-4dda-a77a-13fbd02d2f24"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users (admin)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MThiZjQ2YTI3MWM0NWE5NDZkOWMzMjciLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzY1NjIwOTAsImV4cCI6MTYzNjU2NTY5MH0.D3_PHSzabhrljjb2s8ZGGnvSOAeOqa9wDEI9ysQflH4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ahmed\",\r\n    \"email\":\"ahmedsamy@gmail.com\",\r\n    \"password\":\"Testing0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users?api_key=facd3f50-befb-4dda-a77a-13fbd02d2f24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "facd3f50-befb-4dda-a77a-13fbd02d2f24"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id (admin)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MThiZjQ2YTI3MWM0NWE5NDZkOWMzMjciLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzY1NjIwOTAsImV4cCI6MTYzNjU2NTY5MH0.D3_PHSzabhrljjb2s8ZGGnvSOAeOqa9wDEI9ysQflH4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ahmed\",\r\n    \"email\":\"ahmedsamy@gmail.com\",\r\n    \"password\":\"Testing0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users?api_key=facd3f50-befb-4dda-a77a-13fbd02d2f24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "facd3f50-befb-4dda-a77a-13fbd02d2f24"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user (admin)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ahmed\",\r\n    \"email\":\"ahmedsamy@gmail.com\",\r\n    \"password\":\"Testing0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/register?api_key=facd3f50-befb-4dda-a77a-13fbd02d2f24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "facd3f50-befb-4dda-a77a-13fbd02d2f24"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user (admin)",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ahmed\",\r\n    \"email\":\"ahmedsamy@gmail.com\",\r\n    \"password\":\"Testing0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/register?api_key=facd3f50-befb-4dda-a77a-13fbd02d2f24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "facd3f50-befb-4dda-a77a-13fbd02d2f24"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MThiZjQ2YTI3MWM0NWE5NDZkOWMzMjciLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2MzY1NjIwOTAsImV4cCI6MTYzNjU2NTY5MH0.D3_PHSzabhrljjb2s8ZGGnvSOAeOqa9wDEI9ysQflH4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ahmed\",\r\n    \"email\":\"ahmedsamy@gmail.com\",\r\n    \"password\":\"Testing0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/logout?api_key=facd3f50-befb-4dda-a77a-13fbd02d2f24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "facd3f50-befb-4dda-a77a-13fbd02d2f24"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
